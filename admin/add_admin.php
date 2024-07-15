@@ -51,7 +51,7 @@
         <input type="email" name="email" required><br>
         <label>Nama Lengkap: </label><br>
         <input type="text" name="nama_lengkap" required><br><br>
-        <input type="button" value="Kembali" onclick="window.location.href='dashboard.php';"><input type="submit" value="Tambah"> 
+        <input type="submit" value="Tambah"> 
     </form>
  </body>
 </html>

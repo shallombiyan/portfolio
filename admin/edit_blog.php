@@ -10,7 +10,7 @@ if(isset($_POST['update'])){
     $title = $_POST['title'];
     $content = $_POST['content'];
     $thumbnail = $_FILES['thumbnail']['name'];
-    $target = "uploads/".basename($thumbnail);
+    $target = "../uploads/".basename($thumbnail);
 
     if($thumbnail){
         move_uploaded_file($_FILES['thumbnail']['tmp_name'], $target);
@@ -90,7 +90,7 @@ if(isset($_POST['update'])){
         <input type="text" name="title" value="<?php echo $row['title']; ?>" required><br>
         <textarea id="content" name="content" required><?php echo $row['content']; ?></textarea><br>
         <input type="file" name="thumbnail"><br>
-        <input type="button" value="Kembali" onclick="window.location.href='dashboard.php';"><button type="submit" name="update">Update</button>
+        <button type="submit" name="update">Update</button>
     </form>
 </body>
 </html>

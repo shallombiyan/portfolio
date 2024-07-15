@@ -97,7 +97,7 @@ if (!$result_blog) {
         <tr>
             <td><?php echo $row['title']; ?></td>
             <td><?php echo $row['content']; ?></td>
-            <td><img src="../assets/<?php echo $row['thumbnail']; ?>" alt="Thumbnail"></td>
+            <td><img src="../uploads/<?php echo $row['thumbnail']; ?>" alt="Thumbnail"></td>
             <td>
                 <a href="edit_blog.php?id=<?php echo $row['id']; ?>">Edit</a>
                 <a href="delete_blog.php?id=<?php echo $row['id']; ?>">Delete</a>
@@ -105,6 +105,5 @@ if (!$result_blog) {
         </tr>
         <?php endwhile; ?>
     </table>
-    <input type="button" value="Kembali" onclick="window.location.href='dashboard.php';">
 </body>
 </html>

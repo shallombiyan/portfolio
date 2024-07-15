@@ -5,7 +5,7 @@ if(isset($_POST['submit'])){
     $title = $_POST['title'];
     $content = $_POST['content'];
     $thumbnail = $_FILES['thumbnail']['name'];
-    $target = "uploads/".basename($thumbnail);
+    $target = "../uploads/".basename($thumbnail);
 
     $sql = "INSERT INTO blog (title, content, thumbnail) VALUES ('$title', '$content', '$thumbnail')";
     mysqli_query($conn, $sql);
@@ -83,7 +83,6 @@ if(isset($_POST['submit'])){
         <input type="text" name="title" placeholder="Title" required><br>
         <textarea id="content" name="content" placeholder="Content" required></textarea><br>
         <input type="file" name="thumbnail"><br>
-        <input type="button" value="Kembali" onclick="window.location.href='dashboard.php';">
         <button type="submit" name="submit">Submit</button>
     </form>
 </body>

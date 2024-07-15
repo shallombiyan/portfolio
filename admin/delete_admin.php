@@ -47,7 +47,6 @@ $sql = "DELETE FROM admin WHERE id=$id";
         }
         ?>
         <br>
-        <input type="button" value="Kembali" onclick="window.location.href='dashboard.php';">
     </div>
 </body>
 </html>

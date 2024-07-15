@@ -106,6 +106,5 @@ if (!$result_admin) {
         }
         ?>
     </table>
-    <input type="button" value="Kembali" onclick="window.location.href='dashboard.php';">
 </body>
 </html>

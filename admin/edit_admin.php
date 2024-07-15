@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="email" name="email" value="<?php echo $row['email']; ?>" required><br>
         <label>Nama Lengkap:</label><br>
         <input type="text" name="nama_lengkap" value="<?php echo $row['nama_lengkap']; ?>" required><br><br>
-        <input type="button" value="Kembali" onclick="window.location.href='dashboard.php';"><input type="submit" value="Update">
+        <input type="submit" value="Update">
     </form>
 </body>
 </html>

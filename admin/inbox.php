@@ -87,6 +87,7 @@ if (!$result_contact) {
     <h2>Inbox Kontak</h2>
     <table border="1">
         <tr>
+            <th>Timestamp</th>
             <th>Nama</th>
             <th>Email</th>
             <th>Pesan</th>
@@ -96,6 +97,7 @@ if (!$result_contact) {
         if ($result_contact->num_rows > 0) {
             while ($row = $result_contact->fetch_assoc()) {
                 echo "<tr>";
+                echo "<td>" . $row['timestamp'] . "</td>";
                 echo "<td>" . $row['nama'] . "</td>";
                 echo "<td>" . $row['email'] . "</td>";
                 echo "<td>" . $row['message'] . "</td>";
@@ -107,6 +109,5 @@ if (!$result_contact) {
         }
         ?>
     </table>
-    <input type="button" value="Kembali" onclick="window.location.href='dashboard.php';">
 </body>
 </html>
